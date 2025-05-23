@@ -17,97 +17,95 @@
         </nav>
     </header>
     <section>
-        <article>
+        <article class="container">
             <h1>Pesquisa de Hábitos Digitais - TechNova</h1>
             <p>A TechNova está realizando uma pesquisa para entender melhor os hábitos digitais das pessoas e criar produtos mais alinhados com as suas necessidades. A pesquisa é anônima e leva menos de 5 minutos para ser concluída. Agradecemos sua participação!</p>
         </article>
 
-        <form action="" method="get" autocomplete="on">
+        <form action="" method="get" autocomplete="on" class="container">
 
              <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" class="textbox" placeholder="Seu nome" required>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
              </p>
              <p>
                 <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail" class="textbox" placeholder="Seu email" required>
+                <input type="email" name="email" id="iemail" placeholder="Seu email" required>
              </p>
              <p>
                 <label for="iidade">Idade</label>
-                <input type="number" name="Idade" id="iidade" class="textbox" placeholder="Sua idade" required>
+                <input type="number" name="Idade" id="iidade" placeholder="Sua idade" required>
             </p>
             <p>
-                <legend>Gênero</legend>
-
-                <input type="radio" name="gen" id="ifem">
-                <label for="ifem"> Feminino</label><br>
-
-                <input type="radio" name="gen" id="imas">
-                <label for="igen"> Masculino</label> <br>
-
-                <input type="radio" name="gen" id="ipnd">
-                <label for="igen"> Prefiro não dizer</label> <br>
-
-                <input type="radio" name="gen" id="ioutro">
-                <label for="igen"> Outro</label>
+                <fieldset>
+                    <legend>Gênero</legend>
+                    
+                    <label for="fem"><input type="radio" name="gen" id="fem"> Feminino</label><br>
+                    
+                    <label for="mas"><input type="radio" name="gen" id="mas"> Masculino</label> <br>
+                    
+                    <label for="none"><input type="radio" name="gen" id="none"> Prefiro não dizer</label> <br>
+                    
+                    <label for="outro"><input type="radio" name="gen" id="outro"> Outro</label>
+                </fieldset>
             </p>
             <p>
-                <legend>Você trabalha com tecnologia atualmente?</legend>
-                <input type="radio" name="trab" id="isim">
-                <label for="isim"> Sim</label> <br>
-
-                <input type="radio" name="trab" id="inao">
-                <label for="inao"> Não</label><br>
-
-                <input type="radio" name="trab" id="iest">
-                <label for="iest"> Estudo pra entrar na área</label>
+                <fieldset>
+                    <legend>Você trabalha com tecnologia atualmente?</legend>
+                    
+                    <label for="isim"><input type="radio" name="trab" id="isim"> Sim</label> <br>
+                    
+                    <label for="inao"><input type="radio" name="trab" id="inao"> Não</label><br>
+                    
+                    <label for="iest"><input type="radio" name="trab" id="iest"> Estudo pra entrar na área</label>
+                </fieldset>
             </p>
             <p>
-                <legend>Quanto tempo você passa, em média, usando dispositivos digitais por dia?</legend>
-                <input type="radio" name="tempo" id="-1hr">
-                <label for="-1hr"> Menos de 1 hora</label> <br>
-
-                <input type="radio" name="tempo" id="1a3">
-                <label for="1a3"> 1 a 3 horas</label> <br>
-
-                <input type="radio" name="tempo" id="4a6">
-                <label for="4a6"> 4 a 6 horas</label><br>
-
-                <input type="radio" name="tempo" id="7a9">
-                <label for="7a9"> 7 a 9 horas</label> <br>
-
-                <input type="radio" name="tempo" id="+9">
-                <label for="+9"> Mais de 9 horas</label>
+                <fieldset>
+                    <legend>Quanto tempo você passa, em média, usando dispositivos digitais por dia?</legend>
+                    
+                    <label for="-1hr"><input type="radio" name="tempo" id="-1hr"> Menos de 1 hora</label> <br>
+                    
+                    <label for="1a3"><input type="radio" name="tempo" id="1a3"> 1 a 3 horas</label> <br>
+                    
+                    <label for="4a6"><input type="radio" name="tempo" id="4a6"> 4 a 6 horas</label><br>
+                    
+                    <label for="7a9"><input type="radio" name="tempo" id="7a9"> 7 a 9 horas</label> <br>
+                    
+                    <label for="+9"><input type="radio" name="tempo" id="+9"> Mais de 9 horas</label>
+                </fieldset>
             </p>
             <p>
-                <legend>Para que você mais usa seus dispositivos digitais?</legend>
-                <input type="checkbox" name="usoredes" id="iusoredes" ><label for="iusoredes"> Redes Sociais</label><br>
-                <input type="checkbox" name="usoestu" id="iusoestu"><label for="iusoestu"> Estudos</label><br>
-                <input type="checkbox" name="usotrab" id="iusotrab"><label for="iusotrab"> Trabalho</label><br>
-                <input type="checkbox" name="usojogos" id="iusojogos"><label for="iusojogos"> Jogos</label><br>
-                <input type="checkbox" name="usoler" id="iusoler"><label for="iusoler"> Leitura</label><br>
-                <input type="checkbox" name="usooutro" id="iusooutro"><label for="iusooutro"> Outro</label>
+                <fieldset>
+                    <legend>Para que você mais usa seus dispositivos digitais?</legend>
+                                   <label for="iusoredes"> <input type="checkbox" name="usoredes" id="iusoredes" > Redes Sociais</label><br>
+                    <label for="iusoestu"><input type="checkbox" name="usoestu" id="iusoestu"> Estudos</label><br>
+                    <label for="iusotrab"><input type="checkbox" name="usotrab" id="iusotrab"> Trabalho</label><br>
+                    <label for="iusojogos"><input type="checkbox" name="usojogos" id="iusojogos"> Jogos</label><br>
+                    <label for="iusoler"><input type="checkbox" name="usoler" id="iusoler"> Leitura</label><br>
+                    <label for="iusooutro"><input type="checkbox" name="usooutro" id="iusooutro"> Outro</label>
+                </fieldset>
             </p>
             <p>
                 <label for="plat">Qual plataforma você mais usa? (opcional)</label>
-                <input type="text" name="plat" id="iplat" class="textbox" placeholder="Nome da plataforma">
+                <input type="text" name="plat" id="iplat" placeholder="Nome da plataforma">
             </p>
             <p>
-                <label for="opiniao">O que você gostaria que a TechNova criasse para melhorar sua rotina digital? (opicional)</label>
-               <textarea name="opiniao" id="opiniao" placeholder="Coloque sua opnião aqui..."></textarea >
+                <label for="opiniao">O que você gostaria que a TechNova criasse para melhorar sua rotina digital? (opcional)</label>
+               <textarea name="opiniao" id="opiniao" placeholder="Coloque sua opinião aqui..."></textarea >
             </p>
             <p>
                 <label for="recom">Você recomendaria os produtos da TechNova para um amigo?</label><br>
 
-                <input type="radio" name="recom" id="1"><label for="1"> 1 (Nunca Recomendaria)</label><br>
+                <label for="1"><input type="radio" name="recom" id="recom1"> 1 (Nunca Recomendaria)</label><br>
 
-                 <input type="radio" name="recom" id="2"><label for="2"> 2</label><br>
+                 <label for="2"><input type="radio" name="recom" id="recom2"> 2</label><br>
 
-                 <input type="radio" name="recom" id="3"><label for="3"> 3</label><br>
+                 <label for="3"><input type="radio" name="recom" id="recom3"> 3</label><br>
 
-                 <input type="radio" name="recom" id="4"><label for="4"> 4</label><br>
+                 <label for="4"><input type="radio" name="recom" id="recom4"> 4</label><br>
 
-                 <input type="radio" name="recom" id="5"><label for="5"> 5 (Com certeza recomendaria)</label>
+                 <label for="5"><input type="radio" name="recom" id="recom5"> 5 (Com certeza recomendaria)</label>
             </p>
             <p>
                 <input type="submit" value="Enviar" class="botao">
