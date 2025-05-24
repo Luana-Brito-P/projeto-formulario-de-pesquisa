@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+    form,    input[type="text"], input[type="email"], input[type="number"], textarea, .botao {
+        width: 380px;
+    }
+
+ 
+}
