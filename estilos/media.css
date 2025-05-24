@@ -4,7 +4,11 @@
 
     form,    input[type="text"], input[type="email"], input[type="number"], textarea, .botao {
         width: 380px;
+        
     }
-
+    .container {
+    margin: auto;
+    width: 450px;
+}
  
 }
